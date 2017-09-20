@@ -6,8 +6,8 @@ class ApplicationController < ActionController::Base
   respond_to :json
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.for(:sign_up) << :favorite_color
-    devise_parameter_sanitizer.for(:account_update) << :favorite_color
-    devise_parameter_sanitizer.for(:account_update) << :nickname
+    devise_parameter_sanitizer.permit(:sign_up) #<< :favorite_color
+    devise_parameter_sanitizer.permit(:account_update) #<< :favorite_color
+    devise_parameter_sanitizer.permit(:account_update) #<< :nickname
   end
 end
