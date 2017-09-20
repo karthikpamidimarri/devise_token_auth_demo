@@ -1061,5 +1061,5 @@ module ApplicationHelper
     "Zomp"
   ]
 
-  COLOR_SEARCH = FuzzBall::Searcher.new(COLOR_NAMES)
+#  COLOR_SEARCH = FuzzBall::Searcher.new(COLOR_NAMES)
 end
